@@ -1,0 +1,57 @@
+<table style="width:60%";id="t01";>
+<style>
+body{
+  background-color:#e8c7e6;
+}
+ table, th, td {
+    border: 3px solid white;
+}
+th, td {
+    padding: 15px;
+}
+
+th, td {
+    text-align: center;
+}
+table {
+    width: 100%; 
+    background-color: powderblue;
+}
+</style>
+  <tr>
+    <th>Music</th>
+    <th>Artist</th> 
+    <th>Popularity code</th>
+  </tr>
+  <tr>
+    <td>POP</td>
+    <td>Michael Jackson</td> 
+    <td class="mark">100</td>
+  </tr>
+  <tr>
+    <td>COUNTRY</td>
+    <td>Taylor Swift</td> 
+    <td class="mark">9100</td>
+  </tr>
+  <tr>
+    <td>ROCK</td>
+    <td>Muse</td> 
+    <td class="mark">80</td>
+  </tr>
+  <tr>
+    <td>All music</td>
+    <td>All artists</td> 
+    <td class="total">Total = 270</td>
+  </tr>
+
+ <script>
+	var marks =  document.querySelectorAll('.mark');
+    var total = 0;
+	marks.forEach(function(mark){
+		total += +mark.textContent
+	});
+	document.querySelector('.total').textContent = total;
+ </script>
+ 
+</table>
+</body>
