@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<title>
+     Forms
+</title>
+<body>
+    <style>
+        input[type=text],select,textarea{
+            width:100%;
+            padding: 12px;
+            margin-top:6px;
+            margin-bottom:16px;
+        }    
+        input[type=submit]{
+            background-color:#4CAF50;
+            color:white;
+            cursor:pointer;
+        }
+        </style>
+<div class="container">
+    <form action="action_page.html">
+        <label for="fname"> First name</label>
+        <input type = "text" id="fname" name ="firstname" placeholder="Your first name..">
+        <label for="lname"> Last name</label>
+        <input type ="text" id ="lname" name="lastname" placeholder="Your last name..">
+        <label for="city">City</label>
+        <select id="city" name="city">
+            <option value="Melur">Melur</option>
+            <option value="Viraganoor">Viraganoor</option>
+            <option value="Therkutheru">Therkutheru</option>
+        </select>
+        <label for ="subject">Subject</label>
+        <textarea id="Subject" name ="subject"
+        placeholder="Enter your details here.."
+        style="height:100px"></textarea>
+        <input type="submit" value="Submit">   
+    </form>
+</div>        
+</body>

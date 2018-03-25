@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Switching between HTML list formats</title>
+        <script>
+       var choice,
+startTag,
+endTag,
+validInput=true,
+listType;
+        choice=window.prompt("select a list style:\n"+"1 (bullet), 2(numbered),3(lettered)","1");
+        switch (choice) {
+            case "1":
+                startTag = "<UL>";
+                endTag="</UL>";
+                listType="<h1> Bullet list</h1>";
+                break;
+            case "2":
+                startTag="<OL>";
+                endTag="</OL>";
+                listType="<h1> Ordered List: Numbered</h1>";
+                break;
+            case "3":        
+                startTag="<OL TYPE ='A'>";
+                endTag="</OL>";
+                listType="<h1>Ordered list: Lettered</h1>";
+                break;
+            default:
+                 validInput=false;    
+        }
+        if (validInput===true){
+            document.writeln(listType+startTag);
+
+            for(var i=1; i<=3; i++)
+               document.writeln("<LI>List item "+i+"</LI>");
+
+            document.writeln(endTag);   
+        }
+        else
+            document.writeln("Invalid choice: "+choice);
+        </script>
+
+    </head>
+    <body>
+        <p>Click Refresh or Reload to run the script again</p>
+    </body>
+    </html>
