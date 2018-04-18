@@ -6,15 +6,15 @@
 
   <?php
   function writeName($fname){
-    echo $fname . " Rahman.<br />";
+    echo $fname . " Gomez.<br />";
   }
 
   echo "My name is ";
-  writeName("Aziz");
+  writeName("Selena");
   echo "My sister's name is ";
-  writeName("Anisha");
+  writeName("Diaz");
   echo "My brother's name is ";
-  writeName("Ashik");
+  writeName("Cruz");
   ?>
 
   </body>
